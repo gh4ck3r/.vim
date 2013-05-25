@@ -2,7 +2,7 @@
 set nocompatible
 
 " Prevent unnecessary indentation when paste
-set paste!
+"set paste!
 
 set ignorecase
 set smartcase
