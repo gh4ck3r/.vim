@@ -33,3 +33,12 @@ au BufRead,BufNewFile *.logcat  set filetype=logcat
 au BufRead,BufNewFile *.json    set filetype=javascript
 
 map <C-w>V :tab split<CR>
+
+" Settings for GUI environment
+if has ("gui_running")
+colorscheme koehler
+endif
+
+" Settings for Windows environment
+if has ("win32") || has ("win16")
+endif
