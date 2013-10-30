@@ -44,7 +44,7 @@ if has ("win32") || has ("win16")
 endif
 
 " Run all local plugins in 'plugins' directory
-for s:p in split(globpath(resolve(expand('<sfile>:p:h')).'/plugins', "*.vim"), '\n')
+for s:p in split(globpath(fnamemodify(resolve(expand('<sfile>:p')),":h").'/plugins', "*.vim"), '\n')
 	exe 'source' s:p
 endfor
 
