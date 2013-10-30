@@ -2,6 +2,7 @@
 set nocompatible
 
 " Prevent unnecessary indentation when paste
+" This spoils indentation functionalities
 "set paste!
 
 set ignorecase
