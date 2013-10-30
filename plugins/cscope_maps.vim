@@ -32,6 +32,7 @@ if has("cscope")
 
     " use both cscope and ctag for 'ctrl-]', ':ta', and 'vim -t'
     set cscopetag
+    nmap <C-\><C-]> :vert belowright scs find g <C-R>=expand("<cword>")<CR><CR>
 
     " check cscope for definition of a symbol before checking ctags: set to 1
     " if you want the reverse search order.
