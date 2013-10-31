@@ -49,8 +49,8 @@ endif
 if has ("win32") || has ("win16")
 endif
 
-" Run all local plugin in 'plugin' directory
-for s:p in split(globpath(fnamemodify(resolve(expand('<sfile>:p')),":h").'/plugin', "*.vim"), '\n')
-	exe 'source' s:p
-endfor
+let s:mydir=fnamemodify(resolve(expand('<sfile>:p')),":h")
+if &runtimepath !~ s:mydir
+	exec "set runtimepath+=".s:mydir
+endif
 
