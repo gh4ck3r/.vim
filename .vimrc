@@ -32,6 +32,7 @@ set laststatus=2
 "Used for logcat syntax highlight
 au BufRead,BufNewFile *.logcat  set filetype=logcat
 au BufRead,BufNewFile *.json    set filetype=javascript
+au BufRead,BufNewFile *.jsm     set filetype=javascript
 
 map <C-w>V :tab split<CR>
 
