@@ -37,7 +37,10 @@ map <C-w>V :tab split<CR>
 
 " Settings for GUI environment
 if has ("gui_running")
-colorscheme koehler
+	colorscheme koehler
+	set guifont=DejaVu\ Sans\ Mono\ 9
+	"This is for unity on Ubuntu
+	set guioptions+=f
 endif
 
 " Settings for Windows environment
