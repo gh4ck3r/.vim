@@ -165,4 +165,8 @@ if has("cscope")
     "
     "set ttimeoutlen=100
 
+	" Highlight file paths in cscope search result
+	hi ModeMsg ctermfg=green
+	" Cscope query result will be stored in quickfix buffer
+	set cscopequickfix=s-,c-,d-,i-,t-,e-
 endif
