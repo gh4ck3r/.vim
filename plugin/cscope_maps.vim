@@ -38,16 +38,16 @@ if has("cscope")
     " if you want the reverse search order.
     set csto=0
 
+    if $CSCOPE_DBS != ""
+        for s:cscope_db in split($CSCOPE_DBS,":")
+            exec "cs add ".s:cscope_db
+        endfor
     " add any cscope database in current directory
-    if filereadable("cscope.out")
+    elseif filereadable("cscope.out")
         cs add cscope.out
     " else add the database pointed to by environment variable
-	endif
-
-    if $CSCOPE_DB != ""
-		for s:cscope_db in split($CSCOPE_DB,":")
-			exec "cs add ".s:cscope_db
-		endfor
+    elseif $CSCOPE_DB != ""
+        cs add $CSCOPE_DB
     endif
 
     " show msg when any other cscope db added
