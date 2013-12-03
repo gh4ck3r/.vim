@@ -40,14 +40,14 @@ if has("cscope")
 
     if $CSCOPE_DBS != ""
         for s:cscope_db in split($CSCOPE_DBS,":")
-            exec "cs add ".s:cscope_db
+            exec "silent cs add ".s:cscope_db
         endfor
     " add any cscope database in current directory
     elseif filereadable("cscope.out")
-        cs add cscope.out
+        silent cs add cscope.out
     " else add the database pointed to by environment variable
     elseif $CSCOPE_DB != ""
-        cs add $CSCOPE_DB
+        silent cs add $CSCOPE_DB
     endif
 
     " show msg when any other cscope db added

@@ -9,6 +9,6 @@ if exists("$ANDROID_BUILD_TOP") && has("cscope")
 	endfor
 
 	for s:dir in s:cscope_db
-		exec "cs add ".s:dir
+		exec "silent cs add ".s:dir
 	endfor
 endif
