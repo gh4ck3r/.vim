@@ -36,6 +36,7 @@ au BufRead,BufNewFile *.jsm     set filetype=javascript
 au BufRead,BufNewFile *.webapp	set filetype=javascript
 
 map <C-w>V :tab split<CR>
+map <C-w>v :vert belowright split<CR>
 
 " Settings for GUI environment
 if has ("gui_running")
