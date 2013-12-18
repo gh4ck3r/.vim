@@ -8,9 +8,11 @@ set nocompatible
 set ignorecase
 set smartcase
 set background=dark
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+set textwidth=80
 set smarttab
+set expandtab
 set autoindent
 set smartindent
 set cindent
