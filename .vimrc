@@ -58,3 +58,4 @@ if &runtimepath !~ s:mydir
 	exec "set runtimepath+=".s:mydir
 endif
 
+filetype plugin on
