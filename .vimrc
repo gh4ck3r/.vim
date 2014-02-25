@@ -40,6 +40,7 @@ au BufRead,BufNewFile *.webidl	set filetype=idl
 
 map <C-w>V :tab split<CR>
 map <C-w>v :vert belowright split<CR>
+map <C-w>C :tabclose<CR>
 
 " Settings for GUI environment
 if has ("gui_running")
