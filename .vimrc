@@ -52,6 +52,7 @@ endif
 
 " Settings for Windows environment
 if has ("win32") || has ("win16")
+  lan mes en_US
 endif
 
 let s:mydir=fnamemodify(resolve(expand('<sfile>:p')),":h")
