@@ -62,3 +62,6 @@ if &runtimepath !~ s:mydir
 endif
 
 filetype plugin on
+
+hi CursorLine term=reverse cterm=NONE ctermbg=0 guibg=Grey40
+set cursorline
