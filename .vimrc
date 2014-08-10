@@ -65,3 +65,5 @@ filetype plugin on
 
 hi CursorLine term=reverse cterm=NONE ctermbg=0 guibg=Grey40
 set cursorline
+"Highliht 80th column
+set colorcolumn=80
