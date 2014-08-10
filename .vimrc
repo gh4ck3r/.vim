@@ -63,7 +63,9 @@ endif
 
 filetype plugin on
 
-hi CursorLine term=reverse cterm=NONE ctermbg=0 guibg=Grey40
+hi CursorLine term=reverse cterm=NONE  ctermbg=0    guibg=Grey40
+" with CursorLine highlight "TODO" is turned to invisible on cursorline
+hi Todo                    ctermfg=red ctermbg=NONE
 set cursorline
 "Highliht 80th column
 set colorcolumn=80
