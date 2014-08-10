@@ -69,6 +69,7 @@ hi Todo                    ctermfg=red ctermbg=NONE
 set cursorline
 "Highliht 80th column
 set colorcolumn=80
+hi ColorColumn term=reverse ctermbg=0
 " Don't try to highlight lines longer than 800 characters.
 set synmaxcol=800
 
