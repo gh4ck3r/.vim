@@ -73,13 +73,17 @@ hi ColorColumn term=reverse ctermbg=0
 " Don't try to highlight lines longer than 800 characters.
 set synmaxcol=800
 
-set list
-set listchars=tab:▸\ ,extends:❯,precedes:❮,trail:_
-augroup trailing
-  au!
-  au InsertEnter * :set listchars-=trail:_
-  au InsertLeave * :set listchars+=trail:_
-augroup END
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+"set list
+"set listchars=extends:»,precedes:«,trail:¶
+"set listchars+=tab:\ \ 
+"hi SpecialKey ctermbg=red
+"augroup trailing
+"  au!
+"  au InsertEnter * :set listchars-=trail:¶
+"  au InsertLeave * :set listchars+=trail:¶
+"augroup END
 
 set wildmenu
 set wildmode=list:longest
