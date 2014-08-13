@@ -25,5 +25,4 @@ hi def link hgcommitChanged Special
 hi def link hgcommitRemoved Constant
 
 let b:current_syntax = "hgcommit"
-au BufRead,BufNewFile hg-editor-*.txt set filetype=hgcommit
 
