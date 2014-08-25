@@ -339,9 +339,11 @@ nnoremap <silent> <Plug>MarkSearchGroupPrev   :<C-u>call mark#SearchGroupMark(v:
 
 if !hasmapto('<Plug>MarkSet', 'n')
 	nmap <unique> <Leader>m <Plug>MarkSet
+	nmap <unique> <Space>   <Plug>MarkSet
 endif
 if !hasmapto('<Plug>MarkSet', 'x')
 	xmap <unique> <Leader>m <Plug>MarkSet
+	xmap <unique> <Space>   <Plug>MarkSet
 endif
 if !hasmapto('<Plug>MarkRegex', 'n')
 	nmap <unique> <Leader>r <Plug>MarkRegex
