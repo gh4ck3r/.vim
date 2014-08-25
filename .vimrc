@@ -93,3 +93,9 @@ set wildignore+=.hg,.git,.svn                   " Version control
 set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg  " binary images
 set wildignore+=*.o,*.obj,*.exe,*.dll           " compiled object files
 set wildignore+=*.pyc                           " Python byte code
+
+" Enable gtags (GNU total)
+let GtagsCscope_Auto_Load = 1
+let GtagsCscope_Auto_Map = 1
+let GtagsCscope_Quiet = 1
+set cscopetag
