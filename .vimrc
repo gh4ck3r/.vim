@@ -15,7 +15,7 @@ set smarttab
 set expandtab
 set autoindent
 set smartindent
-set cindent
+"set cindent
 set number
 set nobackup
 set noswapfile
