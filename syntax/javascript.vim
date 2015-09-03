@@ -12,3 +12,5 @@ syn region  javaScriptStringT        start=+`+  skip=+\\\\\|\\'+  end=+`+	    co
 
 hi def link javaScriptStringT		String
 hi def link javaScriptStringTExp Statement
+
+syn keyword javaScriptReserved of
