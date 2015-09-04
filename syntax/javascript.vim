@@ -15,3 +15,4 @@ hi def link javaScriptStringTExp Statement
 
 syn keyword javaScriptReserved of yield
 syn keyword javaScriptGlobal console
+syn keyword javaScriptIdentifier	get set
