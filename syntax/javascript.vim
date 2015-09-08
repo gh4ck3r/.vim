@@ -14,5 +14,7 @@ hi def link javaScriptStringT		String
 hi def link javaScriptStringTExp Statement
 
 syn keyword javaScriptReserved of yield
-syn keyword javaScriptGlobal console
+syn keyword javaScriptGlobal console defaultView ownerDocument
 syn keyword javaScriptIdentifier	get set
+
+syn match javaScriptType		"\<nsI\w\+\>"
