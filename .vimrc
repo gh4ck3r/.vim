@@ -78,7 +78,7 @@ hi ColorColumn term=reverse ctermbg=0
 set synmaxcol=800
 
 highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
+au BufRead,BufNewFile * match ExtraWhitespace /\s\+$/
 "set list
 "set listchars=extends:»,precedes:«,trail:¶
 "set listchars+=tab:\ \ 
