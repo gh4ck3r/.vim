@@ -15,12 +15,12 @@ hi def LogI_color ctermfg=blue guifg=blue
 hi def LogD_color ctermfg=darkgreen guifg=darkgreen
 hi def LogV_color ctermfg=gray guifg=gray
 
-syn match LogF 'F/.*' 
-syn match LogE 'E/.*' 
-syn match LogW 'W/.*' 
-syn match LogI 'I/.*' 
-syn match LogD 'D/.*' 
-syn match LogV 'V/.*' 
+syn match LogF '\(\d\{2}-\d\{2}\s\d\{2}:\d\{2}:\d\{2}\.\d\{3}\s\)\?F/.*'
+syn match LogE '\(\d\{2}-\d\{2}\s\d\{2}:\d\{2}:\d\{2}\.\d\{3}\s\)\?E/.*'
+syn match LogW '\(\d\{2}-\d\{2}\s\d\{2}:\d\{2}:\d\{2}\.\d\{3}\s\)\?W/.*'
+syn match LogI '\(\d\{2}-\d\{2}\s\d\{2}:\d\{2}:\d\{2}\.\d\{3}\s\)\?I/.*'
+syn match LogD '\(\d\{2}-\d\{2}\s\d\{2}:\d\{2}:\d\{2}\.\d\{3}\s\)\?D/.*'
+syn match LogV '\(\d\{2}-\d\{2}\s\d\{2}:\d\{2}:\d\{2}\.\d\{3}\s\)\?V/.*'
 
 hi def link LogF LogF_color
 hi def link LogE LogE_color
