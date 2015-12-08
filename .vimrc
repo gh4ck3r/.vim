@@ -31,9 +31,6 @@ set wildmode=list:longest,full
 set statusline=%-3.3n\ %f\ %r%#Error#%m%#Statusline#\ (%l/%L,\ %v)\ %P%=%h%w\ %y\ [%{&encoding}:%{&fileformat}]
 set laststatus=2
 
-" This is not set on Windows
-syntax on
-
 "Used for logcat syntax highlight
 au BufRead,BufNewFile *.logcat        set filetype=logcat
 au BufRead,BufNewFile *.json          set filetype=javascript
@@ -65,7 +62,10 @@ if &runtimepath !~ s:mydir
 	exec "set runtimepath+=".s:mydir
 endif
 
-filetype plugin on
+" Settings for pathogen (https://github.com/tpope/vim-pathogen)
+exec pathogen#infect()
+syntax on " This is not set on Windows
+filetype plugin indent on
 
 hi CursorLine term=reverse cterm=NONE  ctermbg=0    guibg=Grey40
 " with CursorLine highlight "TODO" is turned to invisible on cursorline
