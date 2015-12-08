@@ -18,3 +18,5 @@ syn keyword javaScriptGlobal console defaultView ownerDocument
 syn keyword javaScriptIdentifier	get set
 
 syn match javaScriptType		"\<nsI\w\+\>"
+
+let g:jshint2_read = 1
