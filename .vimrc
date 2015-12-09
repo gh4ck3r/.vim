@@ -103,3 +103,5 @@ let GtagsCscope_Auto_Map = 1
 let GtagsCscope_Quiet = 1
 let GtagsCscope_Absolute_Path = 1
 set cscopetag
+
+let g:mwDefaultHighlightingPalette = 'extended'
