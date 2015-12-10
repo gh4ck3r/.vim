@@ -19,4 +19,5 @@ syn keyword javaScriptIdentifier	get set
 
 syn match javaScriptType		"\<nsI\w\+\>"
 
-let g:jshint2_read = 1
+" This is not that handy than I thought for just reading JS sources
+"let g:jshint2_read = 1
