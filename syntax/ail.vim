@@ -20,6 +20,7 @@ syn keyword ailCommands         bootchart_init chmod chown class_start class_sto
 syn keyword ailCommandTrigger   trigger
 syn keyword ailKnownOnTarget    boot early-init init late-init post-fs contained
 
+syn match ailAssignment               "=" contained
 syn match ailNumber                   "\<\-\?[0-9]\+\>"
 syn match ailComment                  "#.*" contains=ailTodo
 syn match ailFilePath                 "\/\f\+"
@@ -28,7 +29,7 @@ syn match ailPreProc                  "\${\(\.\|\w\)\+}"
 syn match ailPropertyPrefix           "property:" contained
 syn match ailPropertyTrigger          "property:[^=]\+" contains=ailPropertyPrefix contained
 syn match ailImportStatement          "^import\s\+.\+\s*$" contains=ailKeywordImport,ailPreProc
-syn match ailAction                   "^on\s\+\h\p*\s*$" contains=ailKeywordOn,ailKnownOnTarget,ailPropertyTrigger
+syn match ailAction                   "^on\s\+\h\p*\s*$" contains=ailKeywordOn,ailKnownOnTarget,ailPropertyTrigger,ailAssignment
 syn match ailService                  "^service\s\+\w\+" skipwhite contains=ailKeywordService
 syn match ailCommandTriggerStatement  "^\s*trigger\s\+\f\+" contains=ailCommandTrigger,ailKnownOnTarget
 
