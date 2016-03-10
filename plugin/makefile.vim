@@ -1,7 +1,8 @@
 " Makefile dedicated settings here
 au FileType make call SetMakefileOptions()
 function SetMakefileOptions()
-  set tabstop=4
-  set shiftwidth=4
-  set noexpandtab
+  setlocal tabstop=4
+  setlocal shiftwidth=4
+  setlocal noexpandtab
+  setlocal iskeyword+=-
 endfunction
