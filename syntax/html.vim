@@ -7,3 +7,6 @@
 "endif
 
 syn keyword htmlTagName contained section
+
+" '-' is used for id of elements
+setlocal iskeyword+=-
