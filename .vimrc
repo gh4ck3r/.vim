@@ -59,8 +59,6 @@ if &runtimepath !~ s:mydir
 	exec "set runtimepath+=".s:mydir
 endif
 
-call statusline#decorate()
-
 " Settings for pathogen (https://github.com/tpope/vim-pathogen)
 exec pathogen#infect()
 syntax on " This is not set on Windows
