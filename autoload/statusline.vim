@@ -20,9 +20,13 @@ function! statusline#decorate()
   set statusline+=%=    " Separator
   set statusline+=%h    " Help buffer flag -> [help]
   set statusline+=%w    " Preview window flag -> [Preview]
-  set statusline+=%#GitBranch#%{fugitive#statusline()}%#StatusLine#  " Git branch info
+  set statusline+=%#GitBranch#%{statusline#gitbranch()}%#StatusLine#  " Git branch info
   set statusline+=\ %y  " filetype
   set statusline+=\ [%{&encoding}:%{&fileformat}]
 
   set laststatus=2  " Show statusline always
+endfunction
+
+function statusline#gitbranch()
+  return substitute(fugitive#statusline(), 'Git(\(.*\))', '⎇  \1', '')
 endfunction
