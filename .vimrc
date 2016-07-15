@@ -28,9 +28,6 @@ set showmatch
 set fileencodings=utf-8,ucs-bom,euc-kr,latin1
 set wildmode=list:longest,full
 
-set statusline=%-3.3n\ %f\ %r%#Error#%m%#Statusline#\ (%l/%L,\ %v)\ %P%=%h%w\ %y\ [%{&encoding}:%{&fileformat}]
-set laststatus=2
-
 "Used for logcat syntax highlight
 au BufRead,BufNewFile *.logcat        set filetype=logcat
 au BufRead,BufNewFile *.json          set filetype=javascript
@@ -61,6 +58,8 @@ let s:mydir=fnamemodify(resolve(expand('<sfile>:p')),":h")
 if &runtimepath !~ s:mydir
 	exec "set runtimepath+=".s:mydir
 endif
+
+call statusline#decorate()
 
 " Settings for pathogen (https://github.com/tpope/vim-pathogen)
 exec pathogen#infect()
