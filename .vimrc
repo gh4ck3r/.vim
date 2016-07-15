@@ -77,14 +77,6 @@ au BufRead,BufNewFile * match ExtraWhitespace /\s\+$/
 "  au InsertLeave * :set listchars+=trail:¶
 "augroup END
 
-set wildmenu
-set wildmode=list:longest
-
-set wildignore+=.hg,.git,.svn                   " Version control
-set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg  " binary images
-set wildignore+=*.o,*.obj,*.exe,*.dll           " compiled object files
-set wildignore+=*.pyc                           " Python byte code
-
 " Enable gtags (GNU total)
 let GtagsCscope_Auto_Load = 1
 let GtagsCscope_Auto_Map = 1
