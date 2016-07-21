@@ -34,10 +34,10 @@ map <C-w>C :tabclose<CR>
 
 " Settings for GUI environment
 if has ("gui_running")
-	colorscheme koehler
-	set guifont=DejaVu\ Sans\ Mono
-	"This is for unity on Ubuntu
-	set guioptions+=f
+  colorscheme koehler
+  set guifont=DejaVu\ Sans\ Mono
+  "This is for unity on Ubuntu
+  set guioptions+=f
 endif
 
 " Settings for Windows environment
@@ -47,7 +47,7 @@ endif
 
 let s:mydir=fnamemodify(resolve(expand('<sfile>:p')),":h")
 if &runtimepath !~ s:mydir
-	exec "set runtimepath+=".s:mydir
+  exec "set runtimepath+=".s:mydir
 endif
 
 " Settings for pathogen (https://github.com/tpope/vim-pathogen)
