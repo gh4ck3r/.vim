@@ -39,3 +39,12 @@ let g:airline#extensions#tabline#tab_min_count = 2
 
 let g:airline_section_a = '' "airline#section#create(['file'])
 let g:airline_section_c = '%t'
+
+function! StyleInactiveStatusLine(...)
+  " See :help airline-pipeline for more detail
+  let builder = a:1
+
+  call builder.add_section('inactive_style', '%#StatuslineNC#')
+  return 0   " the default: draw the rest of the statusline
+endfunction
+call airline#add_inactive_statusline_func('StyleInactiveStatusLine')
