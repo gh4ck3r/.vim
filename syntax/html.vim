@@ -7,6 +7,12 @@
 "endif
 
 syn keyword htmlTagName contained section
+syn keyword htmlTagName contained header
+syn keyword htmlTagName contained main
+
+" SVG tags
+syn keyword htmlTagName contained svg
+syn keyword htmlTagName contained circle
 
 " '-' is used for id of elements
 setlocal iskeyword+=-
