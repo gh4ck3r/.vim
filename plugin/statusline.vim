@@ -37,8 +37,10 @@ let g:airline#extensions#tabline#left_alt_sep = '▶'
 let g:airline#extensions#tabline#buffer_min_count = 9999
 let g:airline#extensions#tabline#tab_min_count = 2
 
+" :help airline-sections for more detail
 let g:airline_section_a = '' "airline#section#create(['file'])
 let g:airline_section_c = '%t'
+let g:airline_section_x = airline#section#create(['%{SyntaxItem()}', 'filetype'])
 
 function! StyleInactiveStatusLine(...)
   " See :help airline-pipeline for more detail
@@ -48,3 +50,7 @@ function! StyleInactiveStatusLine(...)
   return 0   " the default: draw the rest of the statusline
 endfunction
 call airline#add_inactive_statusline_func('StyleInactiveStatusLine')
+
+function! SyntaxItem()
+  return synIDattr(synID(line('.'),col('.'),1),'name').' '
+endfunction
