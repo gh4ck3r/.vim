@@ -10,5 +10,8 @@
 " http://www.w3.org/TR/css3-animations/
 " 'animation-iteration-count' is not listed css syntax highlight in vim 7.4
 syn match cssAnimationProp contained "\<animation\(-\(iteration-count\)\)\=\>"
+syn keyword cssAnimationProp contained will-change
 
-syn keyword cssAnimationAttr contained infinite
+syn keyword cssAnimationAttr contained infinite transform opacity
+
+syn keyword cssProp contained pointer-events
