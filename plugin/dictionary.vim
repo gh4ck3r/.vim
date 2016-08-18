@@ -1,7 +1,6 @@
 " For use console dictionary 'sdcv'
 
-let s:dictcmd='sdcv'
-if executable(s:dictcmd)
+if executable('sdcv')
   " Ctrl+K (Capical) will launch the dictionary
-  map <C-K> :execute "!" . s:dictcmd . ' ' . expand('<cword>')<CR>
+  map <C-K> :execute '!sdcv ' . expand('<cword>')<CR>
 endif
