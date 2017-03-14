@@ -13,3 +13,6 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = /etc/vim/.vim/bundle/vim-surround/
+[submodule "bundle/rust.vim"]
+	path = bundle/rust.vim
+	url = /etc/vim/.vim/bundle/rust.vim/
