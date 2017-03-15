@@ -64,3 +64,6 @@ let GtagsCscope_Absolute_Path = 1
 set cscopetag
 
 let g:mwDefaultHighlightingPalette = 'extended'
+
+" Save current file as root and reopen
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
