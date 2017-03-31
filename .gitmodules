@@ -16,3 +16,6 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = git@github.com:tpope/vim-surround.git
+[submodule "bundle/vim-node.js"]
+	path = bundle/vim-node.js
+	url = git@github.com:mmalecki/vim-node.js.git
