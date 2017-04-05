@@ -10,6 +10,7 @@ set smartcase
 set background=dark
 set tabstop=2
 set shiftwidth=2
+set shiftround
 set textwidth=80
 set smarttab
 set expandtab
