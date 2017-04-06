@@ -8,4 +8,4 @@
 set t_ZH=[3m
 set t_ZR=[23m
 
-let g:markdown_fenced_languages = ['javascript', 'html', 'css', 'cpp']
+let g:markdown_fenced_languages = ['javascript', 'html', 'css', 'cpp', 'sh']
