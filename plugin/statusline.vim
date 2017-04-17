@@ -23,6 +23,10 @@ let g:airline_symbols.paste = 'ρ'
 "let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
+" If a file is edited, that is not yet in the repository, the
+" notexists symbol will be displayed after the branch name.
+let g:airline_symbols.notexists = ' ∄'
+
 let g:airline#extensions#bufferline#enabled = 0
 
 let g:airline#extensions#tabline#enabled = 1
