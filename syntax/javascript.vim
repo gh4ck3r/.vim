@@ -13,6 +13,11 @@ syn region  javaScriptStringT        start=+`+  skip=+\\\\\|\\'+  end=+`+	    co
 hi def link javaScriptStringT		String
 hi def link javaScriptStringTExp Statement
 
+" match only first line with "\%1l"
+"  - https://vi.stackexchange.com/questions/6167/define-syntax-in-only-one-line
+syn match   nodeJSShebang   "\%1l^#!.*" contains=@Spell,javaScriptCommentTodo
+hi def link nodeJSShebang   Comment
+
 syn keyword javaScriptReserved of yield constructor
 syn keyword javaScriptGlobal console defaultView ownerDocument
 syn keyword javaScriptIdentifier	get set
