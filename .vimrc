@@ -27,7 +27,6 @@ set incsearch
 set matchpairs+=<:>
 set showmatch
 set fileencodings=utf-8,ucs-bom,euc-kr,latin1
-set wildmode=list:longest,full
 set splitright
 
 map <C-w>V :tab split<CR>

@@ -1,5 +1,5 @@
 set wildmenu
-set wildmode=list:longest
+set wildmode=longest,full
 
 set wildignore+=.hg,.git,.svn                   " Version control
 set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg  " binary images
