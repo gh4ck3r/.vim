@@ -67,3 +67,6 @@ let g:mwDefaultHighlightingPalette = 'extended'
 
 " Save current file as root and reopen
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+
+" Use system clipboard when yank visual block
+set clipboard=autoselectplus,exclude:cons\|linux
