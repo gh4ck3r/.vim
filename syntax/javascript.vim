@@ -18,9 +18,9 @@ hi def link javaScriptStringTExp Statement
 syn match   nodeJSShebang   "\%1l^#!.*" contains=@Spell,javaScriptCommentTodo
 hi def link nodeJSShebang   Comment
 
-syn keyword javaScriptReserved of yield constructor
+syn keyword javaScriptReserved of yield constructor async await
 syn keyword javaScriptGlobal console defaultView ownerDocument
-syn keyword javaScriptIdentifier	get set
+syn keyword javaScriptIdentifier get set
 
 syn match javaScriptType		"\<nsI\w\+\>"
 
