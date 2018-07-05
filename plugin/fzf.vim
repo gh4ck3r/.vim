@@ -6,7 +6,12 @@ nmap <unique> <Leader>f :Files<CR>
 nmap <unique> <Leader>a :Ag<CR>
 "nmap <unique> <Leader>c :Colors<CR>
 unlet mapleader
-let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow -g "!{.git,node_modules}/*" 2>/dev/null'
+
+if executable('rg')
+  let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow -g "!{.git,node_modules}/*" 2>/dev/null'
+else
+  echon "rg is recommended for fzf"
+endif
 
 function! s:update_fzf_colors()
   let rules =
