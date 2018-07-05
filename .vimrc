@@ -52,6 +52,13 @@ if &runtimepath !~ s:mydir
   exec "set runtimepath+=".s:mydir
 endif
 
+let s:fzf_dir=$HOME . '/.bash/tools/fzf'
+if isdirectory(s:fzf_dir)
+  exec "set runtimepath+=".s:fzf_dir
+else
+  echo 'FZF is not installed!!'
+endif
+
 " Settings for pathogen (https://github.com/tpope/vim-pathogen)
 exec pathogen#infect()
 syntax on " This is not set on Windows
