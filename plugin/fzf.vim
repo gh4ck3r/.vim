@@ -1,10 +1,10 @@
 " For any plugins that use this, make their keymappings use comma
 let mapleader = ","
 nmap <unique> ; :Buffers<CR>
-nmap <unique> <Leader>r :Tags<CR>
-nmap <unique> <Leader>t :Files<CR>
+nmap <unique> <Leader>t :Tags<CR>
+nmap <unique> <Leader>f :Files<CR>
 nmap <unique> <Leader>a :Ag<CR>
-nmap <unique> <Leader>c :Colors<CR>
+"nmap <unique> <Leader>c :Colors<CR>
 unlet mapleader
 let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow -g "!{.git,node_modules}/*" 2>/dev/null'
 
