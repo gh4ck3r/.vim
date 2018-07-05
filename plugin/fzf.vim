@@ -10,8 +10,9 @@ unlet mapleader
 if executable('rg')
   let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow -g "!{.git,node_modules}/*" 2>/dev/null'
 else
-  echon "rg is recommended for fzf"
+  autocmd VimEnter * echohl WarningMsg | echon 'rg is recommended for fzf' | echohl None
 endif
+
 
 function! s:update_fzf_colors()
   let rules =
