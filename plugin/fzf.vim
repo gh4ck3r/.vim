@@ -1,4 +1,8 @@
 " For any plugins that use this, make their keymappings use comma
+if !executable('fzf')
+  finish
+endif
+
 let mapleader = ","
 nmap <unique> ; :Buffers<CR>
 nmap <unique> <Leader>t :Tags<CR>

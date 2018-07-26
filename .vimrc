@@ -59,8 +59,8 @@ endif
 " }}}
 
 " Append fzf directory to runtimepath ------------------------------------- {{{
-let s:fzf_dir=$HOME . '/.bash/tools/fzf'
-if isdirectory(s:fzf_dir)
+let s:fzf_dir=fnamemodify(exepath('fzf'), ':h:h')
+if &runtimepath !~# s:fzf_dir
   exec "set runtimepath+=".s:fzf_dir
 endif
 " }}}
