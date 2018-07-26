@@ -82,7 +82,9 @@ set cscopetag
 let g:mwDefaultHighlightingPalette = 'extended'
 
 " Save current file as root and reopen ------------------------------------ {{{
-command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+if ! exists(":W")
+  command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+endif
 " }}}
 
 " Use system clipboard when yank visual block ----------------------------- {{{
