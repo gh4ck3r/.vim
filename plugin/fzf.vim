@@ -4,10 +4,10 @@ if !executable('fzf')
 endif
 
 let mapleader = ","
-nmap <unique> ; :Buffers<CR>
-nmap <unique> <Leader>t :Tags<CR>
-nmap <unique> <Leader>f :Files<CR>
-nmap <unique> <Leader>a :Ag<CR>
+nnoremap <unique> ; zz:Buffers<CR>
+nnoremap <unique> <Leader>t zz:Tags<CR>
+nnoremap <unique> <Leader>f zz:Files<CR>
+nnoremap <unique> <Leader>a zz:Ag<CR>
 "nmap <unique> <Leader>c :Colors<CR>
 unlet mapleader
 
