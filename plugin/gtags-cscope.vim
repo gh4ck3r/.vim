@@ -96,6 +96,11 @@
 "	set cscopetag
 "
 
+let s:is_win = has('win32') || has('win64')
+if s:is_win
+  finish
+endif
+
 let GtagsCscope_Auto_Load = 1
 let GtagsCscope_Auto_Map = 1
 let GtagsCscope_Quiet = 1
