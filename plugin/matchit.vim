@@ -47,6 +47,8 @@ let s:last_words = ":"
 let s:save_cpo = &cpo
 set cpo&vim
 
+let MatchDebug = 1
+
 nnoremap <silent> %  :<C-U>call <SID>Match_wrapper('',1,'n') <CR>
 nnoremap <silent> g% :<C-U>call <SID>Match_wrapper('',0,'n') <CR>
 vnoremap <silent> %  :<C-U>call <SID>Match_wrapper('',1,'v') <CR>m'gv``
