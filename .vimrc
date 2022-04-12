@@ -90,4 +90,9 @@ endif
 " Use system clipboard when yank visual block ----------------------------- {{{
 set clipboard=autoselectplus,exclude:cons\|linux
 " }}}
+
+" prevent '>4;2m' when execute some command from vim; see 'help modifyOtherKeys'
+let &t_TI=""
+let &t_TE=""
+
 " vim: foldmethod=marker
