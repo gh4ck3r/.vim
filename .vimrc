@@ -95,4 +95,6 @@ set clipboard=autoselectplus,exclude:cons\|linux
 let &t_TI=""
 let &t_TE=""
 
+set exrc
+
 " vim: foldmethod=marker
