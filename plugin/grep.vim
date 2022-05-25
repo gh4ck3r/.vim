@@ -7,5 +7,5 @@ endif
 
 cnoreabbrev Ack Ack!
 nnoremap <Leader>A :Ack!<Space>
-nnoremap <Leader>a :exec 'Ack!' expand('<cword>')<CR>
+nnoremap <Leader>a :exec 'Ack! "\b'.expand('<cword>').'\b"'<CR>
 "vnoremap <Leader>a :exec 'Ack!' @*
