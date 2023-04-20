@@ -100,6 +100,8 @@ let g:ale_cpp_ccls_init_options = {
 \   }
 \ }
 
+let g:ale_cpp_flawfinder_minlevel = 3
+
 "function! Push_tag()
 "  echom "hi!!"
 "  <Plug>(ale_go_to_definition)

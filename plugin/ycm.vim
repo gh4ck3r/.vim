@@ -42,6 +42,10 @@ let g:ycm_global_ycm_extra_conf = resolve(
       \ globpath(&rtp, 'compiler/ycm_global_extra_conf.py')
       \ )
 
+" https://github.com/ycm-core/YouCompleteMe/#the-gycm_auto_hover-option
+let g:ycm_auto_hover=''
+"nmap <C-Space> <plug>(YCMHover)
+
 " FIXME : use tag stack :h settagstack
 "autocmd FileType cpp map <buffer> <C-]> :YcmCompleter GoTo<CR>
 
