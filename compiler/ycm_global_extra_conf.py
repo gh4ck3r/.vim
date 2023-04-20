@@ -9,7 +9,7 @@ DIR_OF_THIS_SCRIPT = os.path.abspath( os.path.dirname( __file__ ) )
 SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.m', '.mm' ]
 
 flags = [
-  '-std=c++17',
+  '-std=c++20',
   '-Wall',
   '-Wextra',
   '-Werror',

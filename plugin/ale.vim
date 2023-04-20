@@ -11,7 +11,7 @@ let g:ale_c_parse_compile_commands = 1
 
 " Common options for gcc/clang {{{
 let g:ale_cpp_gcc_options = ''
-let g:ale_cpp_gcc_options .= ' -std=c++17'
+let g:ale_cpp_gcc_options .= ' -std=c++20'
 let g:ale_cpp_gcc_options .=
       \ ' -Wall'.
       \ ' -Wextra'.
@@ -38,7 +38,7 @@ let g:ale_cpp_gcc_options .=
       \ ''
 let g:ale_cpp_clang_options = g:ale_cpp_gcc_options
 let g:ale_cpp_clang_options .=
-      \ ' --std=c++17'.
+      \ ' --std=c++20'.
       \ ' -Wno-pragma-once-outside-header'.
       \ ''
 " }}}
@@ -123,4 +123,4 @@ let g:ale_cpp_ccls_init_options = {
 "let stack['items'] = [item]
 "call settagstack(winid, stack, 't')
 
-let g:ale_cpp_clangtidy_options='-std=c++17'
+let g:ale_cpp_clangtidy_options='-std=c++20'
