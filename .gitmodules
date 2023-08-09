@@ -58,3 +58,6 @@
 [submodule "bundle/ansible-vim"]
 	path = bundle/ansible-vim
 	url = https://github.com/pearofducks/ansible-vim
+[submodule "bundle/vim-cpp-modern"]
+	path = pack/start/vim-cpp-modern
+	url = https://github.com/bfrg/vim-cpp-modern.git
