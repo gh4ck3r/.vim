@@ -46,23 +46,23 @@ let g:ycm_global_ycm_extra_conf = resolve(
 let g:ycm_auto_hover=''
 "nmap <C-Space> <plug>(YCMHover)
 
-" FIXME : use tag stack :h settagstack
-"autocmd FileType cpp map <buffer> <C-]> :YcmCompleter GoTo<CR>
+function! Push_YCM_tag()
+  " Store where we're jumping from.
+  let pos = [bufnr()] + getcurpos()[1:]
+  let item = {'bufnr': pos[0], 'from': pos, 'tagname': expand('<cword>')}
+
+  YcmCompleter GoTo
+
+  " Assuming jump was successful, write to tag stack.
+  let winid = win_getid()
+  let stack = gettagstack(winid)
+  let stack['items'] = [item]
+  call settagstack(winid, stack, 't')
+endfunction
+
+autocmd FileType cpp noremap <buffer> <C-[><C-]> :call Push_YCM_tag()<CR>
 
 "let g:ycm_path_to_python_interpreter = '/usr/bin/python3'
 "let g:ycm_server_use_vim_stdout = 0
 "let g:ycm_server_keep_logfiles = 1
 "let g:ycm_server_log_level = 'debug'
-
-"let g:ALE_open = function('ale#util#Open')
-" :call g:ALE_open("main/main/AgentMainService.cc", 377, 10, {})
-"function! ale#util#Open(filename, line, column, options) abort
-"  g:ALE_open(a:filename, a:line, a:column, a:options)
-"endfunction
-
-"function TagFunc(pattern, flags, info)
-"  return [
-"        \ {'name': 'hello', 'filename': 'main/main/AgentMainService.cc', 'cmd': '378'}
-"        \]
-"endfunc
-"set tagfunc=TagFunc

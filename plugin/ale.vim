@@ -8,6 +8,7 @@ highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 
 let g:ale_c_parse_makefile = 1
 let g:ale_c_parse_compile_commands = 1
+let g:ale_c_build_dir_names = ['build', 'bin']
 
 " Common options for gcc/clang {{{
 let g:ale_cpp_gcc_options = ''
@@ -101,28 +102,6 @@ let g:ale_cpp_ccls_init_options = {
 \ }
 
 let g:ale_cpp_flawfinder_minlevel = 3
-
-"function! Push_tag()
-"  echom "hi!!"
-"  <Plug>(ale_go_to_definition)
-"  let l:winnr = winnr()
-"  let l:cur_stack = gettagstack(l:winnr)
-"  echom "curidx " .l:cur_stack.
-"  echom l:cur_stack.items
-"endfunction
-":noremap <C-[><C-]> :call Push_tag()<CR>
-:noremap <C-[><C-]> :ALEGoToDefinition<CR>
-":noremap <C-[><C-]> :YcmCompleter GoTo<CR>
-
-"" Store where we're jumping from.
-"let pos = [bufnr()] + getcurpos()[1:]
-"let item = {'bufnr': pos[0], 'from': pos, 'tagname': expand('<cword>')}
-"YourCommandToJumpToCWord
-"
-"" Assuming jump was successful, write to tag stack.
-"let winid = win_getid()
-"let stack = gettagstack(winid)
-"let stack['items'] = [item]
-"call settagstack(winid, stack, 't')
-
 let g:ale_cpp_clangtidy_options='-std=c++20'
+
+":noremap <C-[><C-]> :ALEGoToDefinition<CR>
