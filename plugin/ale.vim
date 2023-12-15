@@ -9,6 +9,7 @@ highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 let g:ale_c_parse_makefile = 1
 let g:ale_c_parse_compile_commands = 1
 let g:ale_c_build_dir_names = ['build', 'bin']
+let g:ale_cpp_cc_options = '-std=c++17 -Wall'
 
 " Common options for gcc/clang {{{
 let g:ale_cpp_gcc_options = ''
