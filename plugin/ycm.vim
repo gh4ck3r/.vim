@@ -61,6 +61,7 @@ function! Push_YCM_tag()
 endfunction
 
 autocmd FileType cpp noremap <buffer> <C-[><C-]> :call Push_YCM_tag()<CR>
+autocmd FileType c noremap <buffer> <C-[><C-]> :call Push_YCM_tag()<CR>
 
 "let g:ycm_path_to_python_interpreter = '/usr/bin/python3'
 "let g:ycm_server_use_vim_stdout = 0
