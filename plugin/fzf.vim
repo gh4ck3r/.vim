@@ -12,7 +12,7 @@ nnoremap <unique> <Leader>a zz:Ag<CR>
 unlet mapleader
 
 if executable('rg')
-  let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow -g "!{.git,node_modules}/*" 2>/dev/null'
+  let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow -g "!{.git,node_modules,.cache}/*" 2>/dev/null'
 else
   autocmd VimEnter * echohl WarningMsg | echon 'rg is recommended for fzf' | echohl None
 endif
