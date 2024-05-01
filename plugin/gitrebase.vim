@@ -1,6 +1,4 @@
-if (exists("b:did_gitrebase_plugin"))
-  finish
-endif
-let b:did_ftplugin = 1
-
-setlocal keywordprg=git\ show
+au FileType gitrebase call SetGitRebaseOptions()
+function SetGitRebaseOptions()
+  setlocal keywordprg=git\ show
+endfunction
