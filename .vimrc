@@ -67,8 +67,8 @@ endif
 
 " Settings for pathogen (https://github.com/tpope/vim-pathogen) ----------- {{{
 exec pathogen#infect()
-syntax on " This is not set on Windows
 filetype plugin indent on
+syntax on " This is not set on Windows
 " }}}
 
 " Enable gtags (GNU total) ------------------------------------------------ {{{
