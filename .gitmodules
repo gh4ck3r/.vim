@@ -6,31 +6,31 @@
 	url = https://github.com/Shutnik/jshint2.vim.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
-	url = git@github.com:vim-airline/vim-airline.git
+	url = https://github.com/vim-airline/vim-airline.git
 [submodule "bundle/rust.vim"]
 	path = bundle/rust.vim
-	url = git@github.com:rust-lang/rust.vim.git
+	url = https://github.com/rust-lang/rust.vim.git
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
-	url = git@github.com:tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/vim-node.js"]
 	path = bundle/vim-node.js
-	url = git@github.com:mmalecki/vim-node.js.git
+	url = https://github.com/mmalecki/vim-node.js.git
 [submodule "bundle/jq.vim"]
 	path = bundle/jq.vim
-	url = git@github.com:vito-c/jq.vim.git
+	url = https://github.com/vito-c/jq.vim.git
 [submodule "bundle/ack.vim"]
 	path = bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
 [submodule "bundle/fzf.vim"]
 	path = bundle/fzf.vim
-	url = git@github.com:junegunn/fzf.vim.git
+	url = https://github.com/junegunn/fzf.vim.git
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
-	url = git@github.com:tpope/vim-unimpaired.git
+	url = https://github.com/tpope/vim-unimpaired.git
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
@@ -39,7 +39,7 @@
 	url = https://github.com/sheerun/vim-polyglot
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
-	url = git@github.com:tpope/vim-endwise.git
+	url = https://github.com/tpope/vim-endwise.git
 [submodule "bundle/closetag.vim"]
 	path = bundle/closetag.vim
 	url = https://github.com/docunext/closetag.vim
